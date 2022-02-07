@@ -4,10 +4,16 @@
        x:Class="PokeApi.MainPage">
 
     <TabBar>
-        <ShellContent Title="1" Icon="pokeball.png">
+        <ShellContent Title="1" Icon="accueilIcon.png">
             <page:HomePage/>
         </ShellContent>
-        <ShellContent Title="3" Icon="pokeball.png">
+        <ShellContent Title="2" Icon="pokeballIcon.png" >
+            <page:HomePage/>
+        </ShellContent>
+        <ShellContent Title="3" Icon="pokedexIcon.png">
+            <page:HomePage/>
+        </ShellContent>
+        <ShellContent Title="4" Icon="sacIcon.png">
             <page:HomePage/>
         </ShellContent>
     </TabBar>

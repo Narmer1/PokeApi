@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PokeApi.Page.HomePage">
     <ContentPage.Content>
-        <Label FontSize="Large" Text="cramouille techa"/>
+        <Label FontSize="Large" Text="je suis ingênieur info"/>
     </ContentPage.Content>
 </ContentPage>
