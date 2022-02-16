@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeApi.Android", "PokeApi\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeApi.iOS", "PokeApi\PokeApi.iOS\PokeApi.iOS.csproj", "{3B5F653C-EA92-4D85-910E-BD4D924353AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeApi", "PokeApi\PokeApi\PokeApi.csproj", "{EC44D23B-68D4-4F5B-85A8-8964A7F180CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeApi", "PokeApi\PokeApi\PokeApi.csproj", "{EC44D23B-68D4-4F5B-85A8-8964A7F180CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
