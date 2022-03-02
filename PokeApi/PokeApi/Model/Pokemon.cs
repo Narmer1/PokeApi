@@ -9,10 +9,11 @@ namespace PokeApi.Model
 {
     public class Pokemon
     {
-        /*
-        public int CarID { get; set; }
-        public string Make { get; set; }
-        public int YearOfModel { get; set; }
-        */
+        
+        public int PokemonID { get; set; }
+        public string Name { get; set; }
+
+
+        
     }
 }

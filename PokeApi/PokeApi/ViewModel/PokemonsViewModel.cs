@@ -16,7 +16,11 @@ namespace PokeApi.ViewModel
         private static PokemonsViewModel _instance = new PokemonsViewModel();
         public static PokemonsViewModel Instance { get { return _instance; } }
 
-        public ObservableCollection<Pokemon> items;
+        public ObservableCollection<Pokemon> Items
+        {
+            get { return GetValue<ObservableCollection<Pokemon>>(); }
+            set { SetValue(value); }
+        }
         public PokemonsViewModel()
         {
             /*

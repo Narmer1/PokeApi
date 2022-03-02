@@ -19,6 +19,7 @@ namespace PokeApi.Page
             InitializeComponent();
         }
 
+        /*
         protected override async void OnAppearing()
         {
             base.OnAppearing();
@@ -33,5 +34,6 @@ namespace PokeApi.Page
                 Debug.WriteLine(pokemon.Name);
             }
         }
+        */
     }
 }
