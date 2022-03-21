@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PokeApi.Page.AddPokemon"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Pokémon Name" Text="{Binding NameAdded}" />
+            <Entry Placeholder="Pokémon ID" Text="{Binding IdAdded}" />
+            <Picker
+                Title="Type n°1"
+                ItemsSource="{Binding ListTypes}"
+                SelectedItem="{Binding Type1Added}" />
+            <Picker
+                Title="Type n°2"
+                ItemsSource="{Binding ListTypes}"
+                SelectedItem="{Binding Type2Added}" />
+            <Button Command="{Binding PickImageCommand}" Text="Choisir une Image" />
+            <Frame BorderColor="Black">
+                <Image
+                    HeightRequest="200"
+                    Source="{Binding MediaPath}"
+                    WidthRequest="200" />
+            </Frame>
+            <Button
+                Margin="20"
+                BackgroundColor="LightSalmon"
+                Command="{Binding AddPokemonCommand}"
+                Text="Ajoutez votre propre pokémon !" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

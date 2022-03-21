@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PokeApi.Page.DetailsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Padding="12"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                Text="{Binding SelectedPokemon.Name}"
+                VerticalOptions="Start" />
+            <Label
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                Text="{Binding SelectedPokemon.IDPokedex, StringFormat='Id : {0}'}"
+                VerticalOptions="Start" />
+            <Frame
+                Margin="12"
+                Padding="1"
+                BorderColor="Black"
+                CornerRadius="0">
+                <Image
+                    BackgroundColor="AntiqueWhite"
+                    HeightRequest="200"
+                    Source="{Binding SelectedPokemon.DefaultSprite}"
+                    WidthRequest="200" />
+            </Frame>
+
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="Type(s) : " />
+                <Label FontSize="Large" Text="{Binding SelectedPokemon.Type1}" />
+                <Label FontSize="Large" Text="{Binding SelectedPokemon.Type2}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

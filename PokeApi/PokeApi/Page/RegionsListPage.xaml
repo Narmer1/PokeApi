@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PokeApi.Page.RegionsListPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <CollectionView
+            ItemsSource="{Binding ListRegionModels}"
+            SelectedItem="{Binding SelectedRegion}"
+            SelectionMode="Single">
+            <CollectionView.Header>
+                <Label
+                    Margin="15"
+                    FontSize="Title"
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Text="Liste des régions"
+                    TextColor="DarkGray"
+                    VerticalOptions="CenterAndExpand" />
+            </CollectionView.Header>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10" Spacing="12">
+                        <Frame Padding="15" BorderColor="Black">
+                            <Label
+                                FontSize="Large"
+                                HorizontalTextAlignment="Center"
+                                Text="{Binding Name}" />
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ContentPage.Content>
+</ContentPage>

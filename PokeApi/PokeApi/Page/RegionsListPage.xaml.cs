@@ -1,23 +1,22 @@
-﻿using System;
+﻿using PokeApi.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using PokeApi.Model;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace PokeApi.View
+namespace PokeApi.Page
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PokemonView : ContentView
+    public partial class RegionsListPage : ContentPage
     {
-        public PokemonView()
+        public RegionsListPage()
         {
             InitializeComponent();
-            BindingContext = new PokemonViewModel();
+            BindingContext = RegionsListViewModel.Instance;
         }
     }
 }

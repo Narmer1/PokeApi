@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell
+    x:Class="PokeApi.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:page="clr-namespace:PokeApi.Page"
+    BackgroundColor="Orange">
+
+    <TabBar>
+        <ShellContent Title="accueil" Icon="accueilIcon.png">
+            <page:HomePage />
+        </ShellContent>
+        <ShellContent Title="Liste" Icon="pokeballIcon.png">
+            <page:ListPage />
+        </ShellContent>
+        <ShellContent Title="Ajouter" Icon="pokedexIcon.png">
+            <page:AddPokemon />
+        </ShellContent>
+        <ShellContent Title="Régions" Icon="sacIcon.png">
+            <page:RegionsListPage />
+        </ShellContent>
+    </TabBar>
+
+
+</Shell>

@@ -5,9 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PokeApiNet;
+using PokeApi.ViewModel;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using PokeApi.Model;
 
 namespace PokeApi.Page
 {
@@ -17,23 +19,15 @@ namespace PokeApi.Page
         public ListPage()
         {
             InitializeComponent();
+            BindingContext = ListViewModel.Instance;
         }
 
         /*
-        protected override async void OnAppearing()
+        private async void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            base.OnAppearing();
+            var selectedPokemon = e.CurrentSelection as PokemonModel;
 
-            PokeApiClient pokeClient = new PokeApiClient();
-
-
-            for (int i = 1; i < 21; i++)
-            {
-
-                Pokemon pokemon = await Task.Run(() => pokeClient.GetResourceAsync<Pokemon>(i));
-                Debug.WriteLine(pokemon.Name);
-            }
-        }
-        */
+            await Navigation.PushAsync(new DetailsPage());
+        }*/
     }
 }
